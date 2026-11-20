@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">COMIC</string>
+    <string name="release_badge">نسخه آزمایشی V0.2</string>
+    <string name="app_tagline">دوبله زنده هوش مصنوعی با تأخیر کم</string>
+
+    <!-- Navigation & Common -->
+    <string name="nav_back">بازگشت</string>
+    <string name="nav_settings">تنظیمات</string>
+    <string name="action_skip_for_now">رد شدن فعلاً</string>
+    <string name="action_save">ذخیره کلید</string>
+    <string name="action_test_connection">آزمایش اتصال</string>
+    <string name="action_delete_key">حذف کلید</string>
+    <string name="action_replace_key">جایگزینی کلید</string>
+    <string name="action_dismiss">بستن</string>
+    <string name="action_close">بستن</string>
+    <string name="status_testing">در حال آزمایش…</string>
+
+    <!-- Welcome / Initial Setup -->
+    <string name="welcome_headline">دوبله زنده مستقیم گفتار به گفتار</string>
+    <string name="welcome_description">COMIC صدای در حال پخش از برنامه‌های دیگر را دریافت کرده و مستقیماً به مدل Gemini 3.5 Live Translate می‌فرستد تا صدای دوبله‌شده طبیعی و پیوسته پخش شود؛ بدون رونویسی متن یا ذخیره صدا.</string>
+    <string name="welcome_api_section_title">پیکربندی کلید Gemini API</string>
+    <string name="welcome_permissions_title">مجوزهای مورد نیاز</string>
+    <string name="welcome_perm_audio_title">دسترسی دریافت پخش صدا (RECORD_AUDIO)</string>
+    <string name="welcome_perm_audio_desc">طبق الزام API ضبط پخش اندروید لازم است. COMIC هرگز از میکروفون ضبط نمی‌کند.</string>
+    <string name="welcome_perm_projection_title">تأیید اشتراک‌گذاری صدا (MediaProjection)</string>
+    <string name="welcome_perm_projection_desc">پیش از هر نشست به‌صورت صریح برای دریافت صدای برنامه‌ها درخواست می‌شود.</string>
+    <string name="welcome_perm_notif_title">اعلان نشست فعال</string>
+    <string name="welcome_perm_notif_desc">اجرای پایدار دوبله زنده در پس‌زمینه همراه با دکمه توقف فوری.</string>
+    <string name="welcome_continue_home">ورود به COMIC</string>
+
+    <!-- API Key Field & Validation -->
+    <string name="api_key_label">کلید API گوگل AI Studio</string>
+    <string name="api_key_placeholder">AIza…</string>
+    <string name="api_key_show">نمایش کلید</string>
+    <string name="api_key_hide">پنهان کردن کلید</string>
+    <string name="api_key_saved_masked">ذخیره‌شده در Android Keystore</string>
+    <string name="api_key_empty_error">لطفاً یک کلید معتبر و غیرخالی وارد کنید.</string>
+    <string name="api_key_test_success">اتصال به Gemini 3.5 Live Translate برقرار شد.</string>
+    <string name="api_key_saved">کلید با رمزنگاری Keystore ذخیره شد.</string>
+    <string name="api_key_security_note">نسخه آزمایشی مستقل: کلید شما به‌صورت محلی با Android Keystore (AES-GCM) رمزنگاری می‌شود. ذخیره‌سازی سمت کلاینت تنها برای استفاده خصوصی آزمایشی است و در برابر استخراج کامل APK مصون نیست.</string>
+
+    <!-- Home -->
+    <string name="home_start_live_dubbing">شروع دوبله زنده</string>
+    <string name="home_resume_active_cta">باز کردن نشست فعال</string>
+    <string name="home_live_description">انتقال مستقیم صدای برنامه‌های مجاز به Gemini 3.5 Live Translate برای دوبله پیوسته و طبیعی هم‌زمان با پخش اصلی.</string>
+    <string name="home_target_language_label">زبان مقصد</string>
+    <string name="home_change_target_hint">برای تغییر لمس کنید</string>
+    <string name="home_target_sheet_title">انتخاب زبان دوبله</string>
+    <string name="home_target_sheet_subtitle">ترجمه مستقیم گفتار به گفتار با لحن طبیعی در Gemini 3.5 Live Translate.</string>
+    <string name="home_gemini_status_label">وضعیت Gemini</string>
+    <string name="home_status_configured">کلید تنظیم شده</string>
+    <string name="home_status_unconfigured">نیاز به تنظیم کلید</string>
+    <string name="home_voice_mode_label">حالت صدا</string>
+    <string name="home_voice_mode_natural">طبیعی</string>
+    <string name="home_voice_mode_note">مدل Gemini 3.5 Live Translate لحن و ریتم طبیعی گوینده را بدون تبدیل متن به گفتار یا رونویسی حفظ می‌کند.</string>
+    <string name="home_configure_key_cta">تنظیم کلید API</string>
+
+    <!-- Live Setup -->
+    <string name="setup_title">تنظیم نشست دوبله زنده</string>
+    <string name="setup_source_mode_title">منبع صدا</string>
+    <string name="setup_mode_specific_app">برنامه مشخص</string>
+    <string name="setup_mode_specific_app_desc">فیلتر کردن صدای مجاز یک برنامه خاص بر اساس UID.</string>
+    <string name="setup_mode_entire_screen">کل صدای مجاز دستگاه</string>
+    <string name="setup_mode_entire_screen_desc">دریافت صدای مجاز رسانه و بازی‌ها با تأیید سیستم.</string>
+    <string name="setup_search_apps_hint">جستجوی برنامه‌ها…</string>
+    <string name="setup_no_apps_found">برنامه قابل اجرا با این جستجو یافت نشد.</string>
+    <string name="setup_selected_app_uid">UID %1$d</string>
+    <string name="setup_select_app_prompt">یک برنامه را برای فیلتر کردن UID صدای آن انتخاب کنید.</string>
+    <string name="setup_target_language_title">زبان مقصد ترجمه</string>
+    <string name="setup_android14_note">در اندروید ۱۴ به بالا می‌توانید در پنجره سیستم، یک پنجره برنامه یا کل صفحه را انتخاب کنید.</string>
+    <string name="setup_legacy_projection_note">در این نسخه اندروید، پنجره سیستم مجوز دریافت صدای کل پخش‌های مجاز دستگاه را صادر می‌کند.</string>
+    <string name="setup_capture_limitation_note">توجه: برنامه‌هایی که ضبط پخش را مسدود کرده‌اند (DRM یا allowAudioPlaybackCapture=false) قابل دریافت نیستند.</string>
+    <string name="setup_permission_banner">نیازمند مجوز RECORD_AUDIO و تأیید جدید MediaProjection برای این نشست است.</string>
+    <string name="setup_start_dubbing_cta">شروع دوبله</string>
+
+    <!-- Active Dubbing Session -->
+    <string name="session_stop_dubbing">توقف دوبله</string>
+    <string name="session_pause">مکث</string>
+    <string name="session_resume">ادامه</string>
+    <string name="session_target_label">زبان مقصد</string>
+    <string name="session_source_label">منبع</string>
+    <string name="session_connection_label">اتصال Gemini</string>
+    <string name="session_playback_label">خروجی صدا</string>
+    <string name="session_dubbed_volume_label">بلندی صدای دوبله</string>
+    <string name="session_original_audio_note">صدای برنامه اصلی همچنان پخش می‌شود. برای کاهش صدای اصلی از کنترل برنامه مبدأ یا کلیدهای صدا استفاده کنید؛ استفاده از هدفون توصیه می‌شود.</string>
+    <string name="session_natural_mode_note">حالت طبیعی • دوبله مستقیم گفتار به گفتار در Gemini 3.5 Live Translate.</string>
+    <string name="session_stats_dropped">افت ورودی: %1$d</string>
+    <string name="session_stats_dropped_playback">افت خروجی: %1$d</string>
+    <string name="session_stats_underruns">وقفه بافر: %1$d</string>
+    <string name="session_stats_reconnects">اتصال مجدد: %1$d</string>
+
+    <!-- Session States -->
+    <string name="state_idle">آماده</string>
+    <string name="state_validating">در حال بررسی پیکربندی…</string>
+    <string name="state_requesting_permission">در انتظار تأیید دسترسی پخش…</string>
+    <string name="state_initializing_capture">آماده‌سازی دریافت صدا…</string>
+    <string name="state_connecting_gemini">در حال اتصال به Gemini…</string>
+    <string name="state_listening">در حال شنیدن صدای مبدأ</string>
+    <string name="state_translating">در حال ترجمه گفتار…</string>
+    <string name="state_playing">در حال پخش صدای دوبله</string>
+    <string name="state_reconnecting">تلاش برای اتصال مجدد (%1$d/3)…</string>
+    <string name="state_paused">متوقف موقت</string>
+    <string name="state_stopping">در حال توقف و آزادسازی منابع…</string>
+    <string name="state_error">نشست به دلیل خطا متوقف شد</string>
+
+    <!-- Playback Status -->
+    <string name="playback_status_ready">پخش پیوسته PCM 24kHz</string>
+    <string name="playback_status_waiting">در انتظار صدای ترجمه‌شده</string>
+    <string name="playback_status_paused">بی‌صدا (مکث)</string>
+    <string name="playback_status_stopped">غیرفعال</string>
+
+    <!-- Settings -->
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_ui_language">زبان برنامه</string>
+    <string name="settings_lang_persian">فارسی (راست‌به‌چپ)</string>
+    <string name="settings_lang_english">English (چپ‌به‌راست)</string>
+    <string name="settings_theme">پوسته ظاهری</string>
+    <string name="settings_theme_dark">تیره</string>
+    <string name="settings_theme_system">سیستم</string>
+    <string name="settings_theme_light">روشن</string>
+    <string name="settings_default_target">زبان پیش‌فرض دوبله</string>
+    <string name="settings_dubbed_volume">بلندی پیش‌فرض صدای دوبله</string>
+    <string name="settings_api_section">کلید Gemini API و آزمایش اتصال</string>
+    <string name="settings_privacy_title">حریم خصوصی و پردازش صدا</string>
+    <string name="settings_privacy_body">• صدا فقط به‌صورت جریانی در حافظه (PCM 16kHz) به Gemini Live Translate ارسال می‌شود.\n• هیچ فایل صوتی مبدأ یا دوبله‌شده در حافظه ذخیره نمی‌شود.\n• هیچ مسیر تبدیل گفتار به متن یا متن به گفتار وجود ندارد.\n• مجوز MediaProjection پیش از هر نشست گرفته می‌شود و هیچ تصویر یا فریم ویدیویی ارسال نمی‌گردد.</string>
+    <string name="settings_licenses_title">تایپوگرافی و مجوزهای متن‌باز</string>
+    <string name="settings_vazirmatn_credit">تایپوگرافی فارسی از فونت رسمی وزیرمتن (Vazirmatn) تحت مجوز SIL Open Font License 1.1 استفاده می‌کند.</string>
+    <string name="settings_view_license">مشاهده مجوز SIL OFL 1.1</string>
+    <string name="license_dialog_title">مجوز فونت وزیرمتن — SIL OFL 1.1</string>
+    <string name="settings_version_title">نسخه برنامه</string>
+    <string name="settings_version_value">COMIC %1$s (ساخت %2$s)</string>
+    <string name="settings_about_pipeline">ارتباط مستقیم وب‌سوکت گفتار به گفتار • gemini-3.5-live-translate-preview</string>
+
+    <!-- Foreground Notification -->
+    <string name="notif_channel_name">دوبله زنده COMIC</string>
+    <string name="notif_channel_desc">اعلان نشست فعال دوبله هم‌زمان صدا</string>
+    <string name="notif_title">دوبله زنده COMIC فعال است</string>
+    <string name="notif_body_target">در حال ترجمه به %1$s</string>
+    <string name="notif_body_paused">دوبله موقتاً متوقف است • %1$s</string>
+    <string name="notif_action_stop">توقف دوبله</string>
+
+    <!-- Localized Failure Messages -->
+    <string name="err_invalid_api_key">کلید Gemini API نامعتبر یا فاقد دسترسی است. کلید را در تنظیمات بررسی کنید.</string>
+    <string name="err_gemini_connection">اتصال به سرویس زنده Gemini برقرار نشد. اینترنت خود را بررسی کنید.</string>
+    <string name="err_quota_exceeded">سهمیه یا محدودیت نرخ درخواست Gemini API به پایان رسیده است.</string>
+    <string name="err_model_unavailable">مدل Gemini 3.5 Live Translate برای این کلید یا نقطه اتصال در دسترس نیست.</string>
+    <string name="err_unsupported_source">برنامه یا محتوای انتخاب‌شده اجازه دریافت پخش صدا را نمی‌دهد (DRM یا محدودیت برنامه).</string>
+    <string name="err_no_captured_audio">هنوز صدای مجازی از برنامه مبدأ دریافت نشده است. مطمئن شوید رسانه در حال پخش است.</string>
+    <string name="err_audio_capture_denied">دسترسی دریافت پخش صدا یا مجوز RECORD_AUDIO رد شد.</string>
+    <string name="err_projection_stopped">دسترسی MediaProjection توسط سیستم یا قفل صفحه متوقف شد.</string>
+    <string name="err_websocket_closed">اتصال وب‌سوکت Gemini به‌طور غیرمنتظره بسته شد (%1$s).</string>
+    <string name="err_network_interrupted">ارتباط شبکه قطع شد و تلاش‌های اتصال مجدد به نتیجه نرسید.</string>
+    <string name="err_invalid_pcm">فرمت داده‌های صوتی PCM دریافتی یا ارسالی نامعتبر است.</string>
+    <string name="err_audio_output">راه‌اندازی یا پخش خروجی AudioTrack اندروید با خطا مواجه شد.</string>
+    <string name="err_foreground_service">راه‌اندازی سرویس پیش‌زمینه MediaProjection ناموفق بود.</string>
+    <string name="err_unsupported_android">قابلیت AudioPlaybackCapture نیازمند اندروید ۱۰ (API 29) یا بالاتر است.</string>
+    <string name="err_no_app_selected">لطفاً یک برنامه هدف انتخاب کنید یا گزینه «کل صدای مجاز دستگاه» را برگزینید.</string>
+</resources>

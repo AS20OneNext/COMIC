@@ -1,0 +1,60 @@
+name: گزارش خطا
+description: ثبت خطا یا رفتار غیرمنتظره در COMIC
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        پیش از ثبت، مطمئن شوید مشکل تکرارپذیر است. **کلید API، رمز، فایل keystore یا اطلاعات شخصی را وارد نکنید.**
+
+  - type: input
+    id: app-version
+    attributes:
+      label: نسخهٔ COMIC
+      description: برای مثال 0.2-experimental
+      placeholder: 0.2-experimental
+    validations:
+      required: true
+
+  - type: input
+    id: android-version
+    attributes:
+      label: نسخهٔ اندروید و مدل دستگاه
+      placeholder: Android 15 — Device model
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: مراحل بازتولید
+      description: مراحل را به‌ترتیب بنویسید.
+      placeholder: |
+        1. برنامه را باز کردم...
+        2. گزینهٔ ... را انتخاب کردم...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: رفتار مورد انتظار
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: رفتار واقعی یا متن خطا
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: گزارش‌ها یا تصاویر غیرحساس (اختیاری)
+      description: پیش از ارسال، کلیدها، شناسه‌ها و اطلاعات خصوصی را حذف کنید.
+    validations:
+      required: false

@@ -1,0 +1,27 @@
+# IDE and editor files
+*.iml
+.idea/
+.DS_Store
+
+# Gradle and Android build output
+.gradle/
+.kotlin/
+/build/
+app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# Local environment and credentials — never commit secrets
+.env
+.env.*
+key.properties
+secrets.properties
+debug.keystore
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key

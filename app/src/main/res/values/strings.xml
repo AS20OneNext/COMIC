@@ -1,0 +1,158 @@
+<resources>
+    <string name="app_name">COMIC</string>
+    <string name="release_badge">EXPERIMENTAL V0.2</string>
+    <string name="app_tagline">Real-Time AI Audio Dubbing</string>
+
+    <!-- Navigation & Common -->
+    <string name="nav_back">Back</string>
+    <string name="nav_settings">Settings</string>
+    <string name="action_skip_for_now">Skip for now</string>
+    <string name="action_save">Save Key</string>
+    <string name="action_test_connection">Test Connection</string>
+    <string name="action_delete_key">Delete Key</string>
+    <string name="action_replace_key">Replace Key</string>
+    <string name="action_dismiss">Dismiss</string>
+    <string name="action_close">Close</string>
+    <string name="status_testing">Testing…</string>
+
+    <!-- Welcome / Initial Setup -->
+    <string name="welcome_headline">Direct Speech-to-Speech Live Dubbing</string>
+    <string name="welcome_description">COMIC captures eligible playback audio from other apps and streams it directly to Gemini 3.5 Live Translate for continuous, natural dubbed speech—with zero transcription or stored recordings.</string>
+    <string name="welcome_api_section_title">Gemini API Configuration</string>
+    <string name="welcome_permissions_title">Required Permissions</string>
+    <string name="welcome_perm_audio_title">Audio Capture Access (RECORD_AUDIO)</string>
+    <string name="welcome_perm_audio_desc">Required by Android\'s AudioPlaybackCapture API. COMIC never records from your microphone.</string>
+    <string name="welcome_perm_projection_title">Media Projection Consent</string>
+    <string name="welcome_perm_projection_desc">Requested explicitly before every session to capture eligible app playback.</string>
+    <string name="welcome_perm_notif_title">Session Notification</string>
+    <string name="welcome_perm_notif_desc">Keeps live dubbing running smoothly in the background with an instant Stop control.</string>
+    <string name="welcome_continue_home">Continue to COMIC</string>
+
+    <!-- API Key Field & Validation -->
+    <string name="api_key_label">Google AI Studio API Key</string>
+    <string name="api_key_placeholder">AIza…</string>
+    <string name="api_key_show">Show key</string>
+    <string name="api_key_hide">Hide key</string>
+    <string name="api_key_saved_masked">Saved in Android Keystore</string>
+    <string name="api_key_empty_error">Please enter a non-empty Gemini API key.</string>
+    <string name="api_key_test_success">Connected to Gemini 3.5 Live Translate.</string>
+    <string name="api_key_saved">API key encrypted and saved.</string>
+    <string name="api_key_security_note">Experimental standalone build: your key is encrypted locally via Android Keystore (AES-GCM). Client-side keys are intended for private experimental use only and are not hardened against full APK extraction.</string>
+
+    <!-- Home -->
+    <string name="home_start_live_dubbing">START LIVE DUBBING</string>
+    <string name="home_resume_active_cta">OPEN LIVE SESSION</string>
+    <string name="home_live_description">Stream eligible media audio directly into Gemini 3.5 Live Translate for continuous, expressive dubbing alongside source playback.</string>
+    <string name="home_target_language_label">Target Language</string>
+    <string name="home_change_target_hint">Tap to change</string>
+    <string name="home_target_sheet_title">Select Dubbing Language</string>
+    <string name="home_target_sheet_subtitle">Direct speech-to-speech output with natural pacing via Gemini 3.5 Live Translate.</string>
+    <string name="home_gemini_status_label">Gemini Connection</string>
+    <string name="home_status_configured">Key configured</string>
+    <string name="home_status_unconfigured">Setup required</string>
+    <string name="home_voice_mode_label">Voice Delivery</string>
+    <string name="home_voice_mode_natural">Natural</string>
+    <string name="home_voice_mode_note">Gemini 3.5 Live Translate preserves natural pacing and intonation without separate TTS or transcription.</string>
+    <string name="home_configure_key_cta">Configure API Key</string>
+
+    <!-- Live Setup -->
+    <string name="setup_title">Live Dubbing Setup</string>
+    <string name="setup_source_mode_title">Audio Source</string>
+    <string name="setup_mode_specific_app">Specific Application</string>
+    <string name="setup_mode_specific_app_desc">Filter eligible audio from one launchable app by UID.</string>
+    <string name="setup_mode_entire_screen">All Eligible Playback</string>
+    <string name="setup_mode_entire_screen_desc">Capture eligible device media &amp; game audio via system consent.</string>
+    <string name="setup_search_apps_hint">Search installed apps…</string>
+    <string name="setup_no_apps_found">No matching launchable apps found.</string>
+    <string name="setup_selected_app_uid">UID %1$d</string>
+    <string name="setup_select_app_prompt">Select an application below to filter its audio UID.</string>
+    <string name="setup_target_language_title">Target Language</string>
+    <string name="setup_android14_note">Android 14+ lets you share a single app window or the entire screen in the system consent prompt.</string>
+    <string name="setup_legacy_projection_note">On this Android version, the system prompt grants full-device eligible playback capture.</string>
+    <string name="setup_capture_limitation_note">Note: Apps that disallow playback capture (DRM or allowAudioPlaybackCapture=false) cannot be captured by Android.</string>
+    <string name="setup_permission_banner">Requires RECORD_AUDIO permission and a fresh MediaProjection approval for this session.</string>
+    <string name="setup_start_dubbing_cta">Start Dubbing</string>
+
+    <!-- Active Dubbing Session -->
+    <string name="session_stop_dubbing">Stop Dubbing</string>
+    <string name="session_pause">Pause</string>
+    <string name="session_resume">Resume</string>
+    <string name="session_target_label">Target</string>
+    <string name="session_source_label">Source</string>
+    <string name="session_connection_label">Gemini Link</string>
+    <string name="session_playback_label">Audio Output</string>
+    <string name="session_dubbed_volume_label">Dubbed Output Volume</string>
+    <string name="session_original_audio_note">Source app audio keeps playing. Adjust source volume using the source app or device volume keys; headphones are recommended.</string>
+    <string name="session_natural_mode_note">Natural Mode • Expressive speech-to-speech delivery via Gemini 3.5 Live Translate.</string>
+    <string name="session_stats_dropped">Input drops: %1$d</string>
+    <string name="session_stats_dropped_playback">Output drops: %1$d</string>
+    <string name="session_stats_underruns">Underruns: %1$d</string>
+    <string name="session_stats_reconnects">Reconnects: %1$d</string>
+
+    <!-- Session States -->
+    <string name="state_idle">Idle</string>
+    <string name="state_validating">Validating setup…</string>
+    <string name="state_requesting_permission">Waiting for capture consent…</string>
+    <string name="state_initializing_capture">Initializing audio capture…</string>
+    <string name="state_connecting_gemini">Connecting to Gemini…</string>
+    <string name="state_listening">Listening to source audio</string>
+    <string name="state_translating">Translating speech…</string>
+    <string name="state_playing">Playing dubbed speech</string>
+    <string name="state_reconnecting">Reconnecting (%1$d/3)…</string>
+    <string name="state_paused">Paused</string>
+    <string name="state_stopping">Stopping &amp; releasing…</string>
+    <string name="state_error">Session stopped due to an error</string>
+
+    <!-- Playback Status -->
+    <string name="playback_status_ready">Streaming 24kHz PCM</string>
+    <string name="playback_status_waiting">Awaiting translated audio</string>
+    <string name="playback_status_paused">Muted (Paused)</string>
+    <string name="playback_status_stopped">Inactive</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_ui_language">App Language</string>
+    <string name="settings_lang_persian">فارسی (RTL)</string>
+    <string name="settings_lang_english">English (LTR)</string>
+    <string name="settings_theme">Appearance</string>
+    <string name="settings_theme_dark">Dark</string>
+    <string name="settings_theme_system">System</string>
+    <string name="settings_theme_light">Light</string>
+    <string name="settings_default_target">Default Target Language</string>
+    <string name="settings_dubbed_volume">Default Dubbed Volume</string>
+    <string name="settings_api_section">Gemini API Key &amp; Diagnostics</string>
+    <string name="settings_privacy_title">Privacy &amp; Audio Handling</string>
+    <string name="settings_privacy_body">• Audio is streamed directly in memory as 16kHz PCM to Google Gemini Live Translate.\n• No source or translated audio is saved to disk.\n• No transcription or text translation pipeline is used.\n• MediaProjection permission is requested before each session and never transmits screen video frames.</string>
+    <string name="settings_licenses_title">Typography &amp; Open Source Licenses</string>
+    <string name="settings_vazirmatn_credit">Persian typography uses Vazirmatn (bundled locally under SIL Open Font License 1.1).</string>
+    <string name="settings_view_license">View SIL OFL 1.1</string>
+    <string name="license_dialog_title">Vazirmatn Font — SIL OFL 1.1</string>
+    <string name="settings_version_title">Application Build</string>
+    <string name="settings_version_value">COMIC %1$s (Build %2$s)</string>
+    <string name="settings_about_pipeline">Direct WebSocket speech-to-speech • gemini-3.5-live-translate-preview</string>
+
+    <!-- Foreground Notification -->
+    <string name="notif_channel_name">COMIC Live Dubbing</string>
+    <string name="notif_channel_desc">Active real-time audio dubbing session notification</string>
+    <string name="notif_title">COMIC Live Dubbing Active</string>
+    <string name="notif_body_target">Translating audio to %1$s</string>
+    <string name="notif_body_paused">Dubbing paused • %1$s</string>
+    <string name="notif_action_stop">Stop Dubbing</string>
+
+    <!-- Localized Failure Messages -->
+    <string name="err_invalid_api_key">Invalid or unauthorized Gemini API key. Check your key in Settings.</string>
+    <string name="err_gemini_connection">Could not reach Gemini Live API. Check your internet connection and try again.</string>
+    <string name="err_quota_exceeded">Gemini API quota or rate limit exceeded. Please wait or check your quota.</string>
+    <string name="err_model_unavailable">Gemini 3.5 Live Translate model is currently unavailable for this key or endpoint.</string>
+    <string name="err_unsupported_source">The selected app or stream blocks audio playback capture (DRM or restricted policy).</string>
+    <string name="err_no_captured_audio">No eligible audio playback detected yet. Make sure media is playing in the target app.</string>
+    <string name="err_audio_capture_denied">Audio capture or RECORD_AUDIO permission was denied.</string>
+    <string name="err_projection_stopped">MediaProjection session was stopped by the system or screen lock.</string>
+    <string name="err_websocket_closed">Gemini Live WebSocket closed unexpectedly (%1$s).</string>
+    <string name="err_network_interrupted">Network connection interrupted and reconnection attempts were exhausted.</string>
+    <string name="err_invalid_pcm">Received invalid PCM audio format from capture or server.</string>
+    <string name="err_audio_output">Failed to initialize or write to Android AudioTrack output.</string>
+    <string name="err_foreground_service">Could not start the MediaProjection foreground service.</string>
+    <string name="err_unsupported_android">AudioPlaybackCapture requires Android 10 (API 29) or higher.</string>
+    <string name="err_no_app_selected">Please select a target application or switch to All Eligible Playback.</string>
+</resources>

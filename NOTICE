@@ -1,0 +1,25 @@
+# اطلاعیهٔ دارایی‌های شخص ثالث
+
+این مخزن شامل دو خانواده فونتِ شخص ثالث است که در برنامهٔ اندروید بسته‌بندی شده‌اند. مجوز این فونت‌ها مستقل از وضعیت مجوز کد اصلی COMIC است.
+
+## Vazirmatn
+
+- کاربرد: نمایش متن فارسی در رابط کاربری.
+- صاحب اثر/پروژه: The Vazirmatn Project Authors.
+- مخزن اصلی: https://github.com/rastikerdar/vazirmatn
+- مجوز: SIL Open Font License 1.1 (OFL-1.1).
+- متن مجوز همراه برنامه: `app/src/main/assets/licenses/VAZIRMATN_OFL.txt`.
+
+## JetBrains Mono
+
+- کاربرد: فونت تک‌فاصلهٔ رابط کاربری.
+- صاحب اثر/پروژه: The JetBrains Mono Project Authors.
+- مخزن اصلی: https://github.com/JetBrains/JetBrainsMono
+- مجوز: SIL Open Font License 1.1 (OFL-1.1).
+- متن مجوز همراه برنامه: `app/src/main/assets/licenses/JETBRAINS_MONO_OFL.txt`.
+
+## وابستگی‌های نرم‌افزاری
+
+وابستگی‌های Android، Kotlin، Jetpack Compose، OkHttp و سایر کتابخانه‌ها تحت مجوزهای منتشرشده توسط صاحبان اصلی خود هستند. اطلاعات نسخه‌ها در `gradle/libs.versions.toml` نگهداری می‌شود. مجوز این وابستگی‌ها با مجوز کد اصلی COMIC یکی نیست.
+
+این اطلاعیه به‌معنی تأیید یا حمایت صاحبان فونت‌ها و کتابخانه‌ها از COMIC نیست.

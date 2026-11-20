@@ -1,0 +1,33 @@
+name: پیشنهاد قابلیت
+description: پیشنهاد بهبود یا قابلیت جدید برای COMIC
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        پیشنهاد را تا حد امکان مشخص و در چارچوب هدف برنامه توضیح دهید.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: مسئله یا نیاز
+      description: چه مشکلی را می‌خواهید حل کنید؟
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: راه‌حل پیشنهادی
+      description: رفتار مورد انتظار را توضیح دهید.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: راه‌حل‌های جایگزین یا نکات تکمیلی (اختیاری)
+    validations:
+      required: false
